@@ -1,3 +1,4 @@
+#include <stdio.h> 
 extern int factorial(int n);
 int factorial_inefficient(int n){
 	int counter = n;
@@ -10,5 +11,10 @@ int factorial_inefficient(int n){
 }
 
 int main(){
-	return factorial_inefficient(5);
+	short e = 0;
+	e = factorial(5);
+	int i = factorial_inefficient(5);
+	printf("Efficient: %d\n", e);
+	printf("Inefficient: %d\n", i);
+	return factorial(5);	
 }
